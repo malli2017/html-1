@@ -7,5 +7,85 @@
 </head>
 <body>
 this is second page
+<h1>data base</h1>
+<a href="#join">joins</a>
+<h3>triggers</h3>
+<p>A PL/SQL program unit associated with a particular database table is called a database trigger. It is used for :
+Audit data modifications.
+Log events transparently.
+Enforce complex business rules.
+Maintain replica tables
+Derive column values
+Implement Complex security authorizations</p>
+
+<h3>stored Procedure</h3>
+<p>A stored procedure is a sequence of statement or a named PL/SQL block which performs one or more specific functions.
+ It is similar to a procedure in other programming languages. It is stored in the database and can be repeatedly executed. 
+ It is stored as schema object. It can be nested, invoked and parameterized.
+Learn more about PL/SQL Collections & Records.</p>
+
+<h3>cursor and why it is required</h3>
+<p>A cursor is a temporary work area created in a system memory when an SQL statement is executed.
+A cursor contains information on a select statement and the row of data accessed by it. 
+This temporary work area stores the data retrieved from the database and manipulate this data.
+ A cursor can hold more than one row, but can process only one row at a time. Cursor are required to process rows individually for queries.</p>
+ 
+ <a name="join"><h3>joins</h3></a>
+ <p>A SQL join is a Structured Query Language (SQL) instruction to combine data from two 
+ sets of data (e.g. two tables). Before we dive into the details of a SQL join, let’s briefly
+ discuss what SQL is, and why someone would want to perform a SQL join.
+
+SQL is a special-purpose programming language designed for managing information 
+in a relational database management system (RDBMS). The word relational here is key; it specifies that the 
+database management system is organized in such a way
+ that there are clear relations defined between different sets of data. </p>
+ 
+ <p> How is a process of PL/SQL compiled?
+Compilation process includes syntax check, bind and p-code generation processes.
+Syntax checking checks the PL/SQL codes for compilation errors.
+ When all errors are corrected, a storage address is assigned to the variables that hold data.
+ It is called Binding. P-code is a list of instructions for the PL/SQL engine. 
+ P-code is stored in the database for named blocks and is used the next time it is executed.
+Go through this tutorial to learn more about handling PL/SQL errors.
+
+6. Mention what PL/SQL package consists of?
+A PL/SQL package consists of
+PL/SQL table and record TYPE statements
+Procedures and Functions
+Cursors
+Variables ( tables, scalars, records, etc.) and constants
+Exception names and pragmas for relating an error number with an exception
+Cursors
+Check the insightful PL/SQL tutorial to learn more about Pl/SQL Packages
+
+7. What are the benefits of PL/SQL packages?
+It provides several benefits like
+Enforced Information Hiding: It offers the liberty to choose whether to keep data private or public
+Top-down design: You can design the interface to the code hidden in the package before you actually implemented the modules themselves
+Object persistence: Objects declared in a package specification behaves like a global data for all PL/SQL objects in the application.
+ You can modify the package in one module and then reference those changes to another module
+Object oriented design: The package gives developers strong hold over how the modules and data structures inside the package can be used
+Guaranteeing transaction integrity: It provides a level of transaction integrity
+Performance improvement: The RDBMS automatically tracks the validity of all program objects stored
+ in the database and enhance the performance of packages.
+8. What are different methods to trace the PL/SQL code?
+Tracing code is a crucial technique to measure the code performance during the runtime. Different methods for tracing includes
+DBMS_APPLICATION_INFO
+DBMS_TRACE
+DBMS_SESSION and DBMS_MONITOR
+trcsess and tkproof utilities
+9. What is the difference between FUNCTION, PROCEDURE AND PACKAGE in PL/SQL?
+Function: The main purpose of a PL/SQL function is generally to compute and return a single value.
+ A function has a return type in its specification and must return a value specified in that type.
+Procedure: A procedure does not have a return type and should not return any value but it can have a return 
+statement that simply stops its execution and returns to the caller. A procedure is used to return multiple values 
+otherwise it is generally similar to a function.
+Package: A package is schema object which groups logically related PL/SQL types , items and subprograms. 
+You can also say that it is a group of functions, procedure, variables and record type statement.
+ It provides modularity, due to this facility it aids application development. It is used to hide information from unauthorized users.
+
+</p>
+
+
 </body>
 </html>
