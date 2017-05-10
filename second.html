@@ -40,6 +40,34 @@ in a relational database management system (RDBMS). The word relational here is 
 database management system is organized in such a way
  that there are clear relations defined between different sets of data. </p>
  
+ <table border="1" width=100% cellpadding="2" cellspacing="2">
+        <tr>
+		<th>type</th>
+		<th>des</th>
+		</tr>
+		
+		<tr>
+		<td>left</td>
+		<td>Select all records from Table A and Table B, where the join condition is met</td>
+		</tr>
+		<tr>
+		<td>outer</td>
+		<td>Select all records from Table A, along with records from Table B for which the join condition is met (if at all)</td>
+		</tr>
+		<tr>
+		<td>right</td>
+		<td>Select all records from Table B, along with records from Table A for which the join condition is met (if at all)</td>
+		</tr>
+		<tr>
+		
+		<td>inner</td>
+		<td>Select all records from Table A and Table B, regardless of whether the join condition is met or not.</td>
+		</tr>
+		
+		
+		
+	</table>
+ 
  <p> How is a process of PL/SQL compiled?
 Compilation process includes syntax check, bind and p-code generation processes.
 Syntax checking checks the PL/SQL codes for compilation errors.
@@ -85,6 +113,8 @@ You can also say that it is a group of functions, procedure, variables and recor
  It provides modularity, due to this facility it aids application development. It is used to hide information from unauthorized users.
 
 </p>
+
+
 
 
 </body>
